@@ -1,9 +1,6 @@
-use std::{
-    io::{Read, Write},
-    process::ExitStatus,
-};
+use std::io::{Read, Write};
 
-use anyhow::{Result, anyhow, bail};
+use anyhow::{anyhow, bail, Result};
 use serde::{Deserialize, Serialize};
 
 const CONFIG_FOLDER: &str = "clone-my";
